@@ -1,3 +1,3 @@
-# Vanilla JavaScript App
+# Resume website
 
-This repo is used as a starter for a _very basic_ HTML web application using no front-end frameworks.
+This simple HTML site is going to be used to host my resume on an Azure static website
