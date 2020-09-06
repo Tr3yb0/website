@@ -1,6 +1,6 @@
 {
     "staticWebApps.appSubpath": "/",
-    "staticWebApps.apiSubpath": "app",
+    "staticWebApps.apiSubpath": "/api",
     "staticWebApps.appArtifactSubpath": "",
     "azureFunctions.deploySubpath": "api",
     "azureFunctions.postDeployTask": "npm install",
