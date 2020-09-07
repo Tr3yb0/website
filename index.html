@@ -5,21 +5,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <title>Trey Botard</title>
 </head>
 
 <body>
+  <header>
+    <h1>Trey Botard</h1>
+  </header>
+  <p></p>
   <main>
-    <h1>Treys Azure Static Web App</h1>
-    <p>Loading content from the API: <b id="name">...</b></p>
-  </main>
+    <section id="about">
+      <h1>about</h1>
+      <p>Technologist focusing on the full stack serverless in the cloud</p>
+    </section>
 
-  <script>
+    <section id="bio">
+      <h1>bio</h1>
+      <p>A Texan in North Carolina</p>
+    </section>
+
+    <section id="work-experience">
+      <h1>work experience</h1>
+      <ul>
+        <li>Application Developer at Volvo Group</li>
+        <li>Application Developer with Mindtree at Lincoln Financial Group</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h1>education</h1>
+      <ul>
+        <li>B.A. in Computer Science from Texas State University</li>
+        <li>A.A.S. in Architectural Drafting from Austin Community College</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h1>skills</h1>
+      <ul>
+        <li>nunchuck</li>
+        <li>hacking</li>
+        <li>bo staff</li>
+      </ul>
+    </section>
+
+    <section id="hobbies">
+      <h1>hobbies</h1>
+      <ul>
+        <li>cooking</li>
+        <li>hiking</li>
+        <li>nerding</li>
+      </ul>
+    </section>
+    
+    <section id="contact">
+      <h1>contact</h1>
+      <a href="mailto:tbotard@gmail.com">email</a>
+      <a href="https://twitter.com/TreyBotard">twitter</a>
+    </section>
+
+  </main>
+<!-- 
+  <footer>
+    <header>footer</header>
+    <p></p>
+  </footer> -->
+<!--     
+    <h1>Treys Azure Static Web App</h1>
+    <header>Loading content from the API: <b id="name">...</b></header>
+  <p></p> -->
+
+  <!-- <script>
     (async function(){
       let { text } = await( await fetch(`/api/message`)).json();
       document.querySelector('#name').textContent = text;
     }())
-  </script>
+  </script> -->
 </body>
 
 </html>
