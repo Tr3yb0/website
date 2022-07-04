@@ -1,29 +1,31 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: "jit",
+  mode: 'jit',
   content: [
-    "./components/**/*.{vue,js}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
+    './components/**/*.{vue,ts,js}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+    'app.vue',
   ],
   fontFamily: {
     sans: ['Roboto', 'sans-serif'],
-    serif: ['Merriweather', 'serif']
+    serif: ['Merriweather', 'serif'],
   },
   theme: {
     extend: {},
   },
   plugins: [
-    plugin(function({ addBase, theme }) {
+    require('@tailwindcss/typography'),
+    plugin(function ({ addBase, theme }) {
       addBase({
-        'h1': { fontSize: theme('fontSize.2xl') },
-        'h2': { fontSize: theme('fontSize.xl') },
-        'h3': { fontSize: theme('fontSize.lg') },
-      })
-    })
-  ]
+        h1: { fontSize: theme('fontSize.2xl', 'font.semibold') },
+        h2: { fontSize: theme('fontSize.xl') },
+        h3: { fontSize: theme('fontSize.lg') },
+      });
+    }),
+  ],
 };
