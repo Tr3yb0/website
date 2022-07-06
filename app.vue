@@ -3,7 +3,9 @@ import '~/assets/css/tailwind.css';
 </script>
 
 <template>
-  <main>
-    <NuxtPage />
-  </main>
+  <div>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>

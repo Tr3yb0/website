@@ -1,8 +1,12 @@
+<script setup lang="ts">
+useHead({
+  title: 'Home page',
+});
+</script>
+
 <template>
-  <div
-    class="flex flex-col justify-center items-start max-w-prose mx-auto my-12"
-  >
-    <main class="w-full">
+  <main>
+    <section class="w-full">
       <h1 class="">Trey Botard</h1>
       <h3>
         Developer Advocate
@@ -11,7 +15,7 @@
       <p>
         Building things and writing stuff to help developers create with Atomic
       </p>
-    </main>
+    </section>
     <MyFooter />
-  </div>
+  </main>
 </template>
