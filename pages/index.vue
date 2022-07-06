@@ -15,6 +15,7 @@ useHead({
       <p>
         Building things and writing stuff to help developers create with Atomic
       </p>
+      <NuxtLink to="/about">About page</NuxtLink>
     </section>
     <MyFooter />
   </main>

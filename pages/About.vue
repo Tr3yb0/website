@@ -5,6 +5,9 @@ useHead({
 </script>
 
 <template>
-  <h1>About Trey</h1>
-  <p>hes nice</p>
+  <main>
+    <h1>About Trey</h1>
+    <NuxtLink to="/">Home page</NuxtLink>
+    <p>hes nice</p>
+  </main>
 </template>
