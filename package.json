@@ -1,4 +1,8 @@
 {
+  "author": {
+    "name": "Trey Botard",
+    "url": "https://treybotard.com"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
