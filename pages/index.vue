@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import Bio from '~~/components/Bio.vue';
+import MyFooter from '~~/components/MyFooter.vue';
 useHead({
   title: 'Trey Botard',
 });
@@ -7,9 +9,8 @@ useHead({
 <template>
   <main>
     <section class="w-full">
-      <Bio />
-      <NuxtLink to="/about">About page</NuxtLink>
+      <Bio class="max-w-sm" />
     </section>
-    <MyFooter />
+    <MyFooter class="mt-4" />
   </main>
 </template>
