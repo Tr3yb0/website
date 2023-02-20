@@ -1,20 +1,13 @@
 <script lang="ts" setup>
 useHead({
-  title: 'Home page',
+  title: 'Trey Botard',
 });
 </script>
 
 <template>
   <main>
     <section class="w-full">
-      <h1 class="">Trey Botard</h1>
-      <h3>
-        Developer Advocate
-        <a href="https://atomic.financial" target="_blank">@Atomic.financial</a>
-      </h3>
-      <p>
-        Building things and writing stuff to help developers create with Atomic
-      </p>
+      <Bio />
       <NuxtLink to="/about">About page</NuxtLink>
     </section>
     <MyFooter />

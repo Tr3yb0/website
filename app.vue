@@ -1,9 +1,5 @@
-<script lang="ts" setup>
-import '~/assets/css/tailwind.css';
-</script>
-
 <template>
-  <div>
+  <div class="h-screen bg-neutral-900 text-gray-200">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
