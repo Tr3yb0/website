@@ -7,7 +7,7 @@ useHead({
 </script>
 
 <template>
-  <main>
+  <main class="ml-2">
     <section class="w-full">
       <Bio class="max-w-sm" />
     </section>

@@ -2,7 +2,7 @@
   <button>
     <NuxtLink to="https://linkedin.com/in/treybotard" target="_blank">
       <svg
-        class="stroke-white w-8"
+        class="stroke-white w-8 hover:stroke-slate-300"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100">
         <path
