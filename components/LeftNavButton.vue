@@ -1,7 +1,7 @@
 <template>
   <button>
     <NuxtLink
-      class="rounded px-2 py-1 w-16 font-serif font-medium bg-zinc-800 hover:bg-zinc-600"
+      class="rounded p-2 w-16 font-serif text-lg hover:bg-zinc-700"
       :to="props.to">
       {{ text }}
     </NuxtLink>
