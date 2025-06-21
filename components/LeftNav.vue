@@ -10,16 +10,20 @@
 </template>
 
 <script setup lang="ts">
-import { LeftNavItem } from '~/components/LeftNavButton.vue';
+import type { LeftNavItem } from "~/components/LeftNavButton.vue";
 
 const navItems = new Array<LeftNavItem>(
   {
-    to: '/',
-    text: 'Home',
+    to: "/",
+    text: "Home",
   },
   {
-    to: '/#speaking',
-    text: 'Speaking',
-  }
+    to: "/#experience",
+    text: "Experience",
+  },
+  {
+    to: "/#speaking",
+    text: "Speaking",
+  },
 );
 </script>
