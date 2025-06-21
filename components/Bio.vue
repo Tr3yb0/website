@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center space-x-4 mb-8 lg:mb-0">
+  <div class="flex items-center mb-8 lg:mb-0">
     <div class="lg:hidden">
       <NuxtLink to="/">
         <img
@@ -9,7 +9,7 @@
         />
       </NuxtLink>
     </div>
-    <h1 class="font-serif">Trey Botard</h1>
+    <h1 class="font-serif ml-4 lg:ml-0">Trey Botard</h1>
   </div>
   <p class="mt-8">
     I lead
