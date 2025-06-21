@@ -18,8 +18,8 @@ const navItems = new Array<LeftNavItem>(
     text: 'Home',
   },
   {
-    to: '/about',
-    text: 'About',
+    to: '/#speaking',
+    text: 'Speaking',
   }
 );
 </script>

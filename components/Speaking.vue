@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-12">
+  <section id="speaking" class="mt-12">
     <h2 class="text-xl font-semibold mb-6">Speaking & Community</h2>
     
     <div class="space-y-6">
