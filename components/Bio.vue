@@ -9,7 +9,7 @@
         />
       </NuxtLink>
     </div>
-    <h1 class="font-serif ml-4 lg:ml-0">Trey Botard</h1>
+    <h1 class="font-caveat ml-4 lg:ml-0 text-3xl">Trey Botard</h1>
   </div>
   <p class="mt-8">
     I lead

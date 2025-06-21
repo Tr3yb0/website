@@ -1,8 +1,9 @@
 <template>
   <button>
     <NuxtLink
-      class="rounded p-2 w-16 font-serif text-lg hover:bg-zinc-700"
-      :to="props.to">
+      class="rounded p-2 w-16 font-caveat text-2xl hover:bg-zinc-700"
+      :to="props.to"
+    >
       {{ text }}
     </NuxtLink>
   </button>
