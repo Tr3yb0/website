@@ -1,5 +1,16 @@
 <template>
-  <h1 class="font-serif">Trey Botard</h1>
+  <div class="flex items-center space-x-4 mb-8 lg:mb-0">
+    <div class="lg:hidden">
+      <NuxtLink to="/">
+        <img
+          class="w-16 h-16"
+          src="~/assets/images/TB-logo-dark.jpg"
+          alt="TB logo"
+        />
+      </NuxtLink>
+    </div>
+    <h1 class="font-serif">Trey Botard</h1>
+  </div>
   <p class="mt-8">
     I lead
     <b
