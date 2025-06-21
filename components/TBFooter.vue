@@ -1,9 +1,9 @@
 <template>
   <footer class="flex flex-row mt-6">
+    <ButtonsLinkedIn />
     <ButtonsGithub />
-    <ButtonsTwitter />
+    <ButtonsBluesky />
     <ButtonsInsta />
     <ButtonsYouTube />
-    <ButtonsLinkedIn />
   </footer>
 </template>
