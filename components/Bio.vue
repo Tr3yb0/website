@@ -1,5 +1,6 @@
 <template>
   <div class="flex items-center mb-8 lg:mb-0">
+    <!-- TB image in mobile -->
     <div class="lg:hidden">
       <NuxtLink to="/">
         <img
@@ -9,20 +10,18 @@
         />
       </NuxtLink>
     </div>
-    <h1 class="font-caveat ml-4 lg:ml-0 text-3xl">Trey Botard</h1>
+    <h1 class="font-caveat ml-4 lg:ml-0 text-5xl">Trey Botard</h1>
   </div>
   <p class="mt-8">
     I lead
-    <b
-      >Developer Relations at
-      <NuxtLink
-        class="hover:underline hover:opacity-100 text-blue-400 transition-opacity"
-        to="https://atomic.financial"
-        target="_blank"
-      >
-        Atomic Financial</NuxtLink
-      >
-    </b>
+    <b>Developer Relations</b> at
+    <NuxtLink
+      class="hover:underline hover:opacity-100 text-blue-400 transition-opacity font-bold"
+      to="https://atomic.financial"
+      target="_blank"
+    >
+      Atomic Financial</NuxtLink
+    >
     simplifying financial connectivity so tech teams can build and ship fast.
   </p>
   <p class="mt-6">
