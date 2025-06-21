@@ -1,6 +1,11 @@
 <template>
   <section id="experience" class="mt-12">
-    <h2 class="text-xl font-semibold mb-6">Professional Experience</h2>
+    <h2 class="text-xl font-semibold mb-6 group">
+      <a href="#experience" class="flex items-center">
+        Professional Experience
+        <span class="ml-2 opacity-0 group-hover:opacity-100 text-blue-400 transition-opacity text-3xl italic">#</span>
+      </a>
+    </h2>
 
     <div class="space-y-6">
       <div class="border-l-2 border-blue-500 pl-4">
