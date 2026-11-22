@@ -34,7 +34,7 @@ import { siteConfig } from "~/data/site";
     <h1
       class="mt-5 font-display text-4xl font-medium leading-[1.12] tracking-tight text-white sm:text-5xl"
     >
-      Building clearer paths for<br />
+      Building clear paths for<br />
       developers and teams.
     </h1>
     <p class="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
@@ -48,9 +48,9 @@ import { siteConfig } from "~/data/site";
       >
         {{ siteConfig.company
         }}<span class="sr-only"> (opens in new tab)</span></NuxtLink
-      >, building docs, tools, and internal workflows that remove recurring
-      friction. Lately, I’ve also been building AI workflows for day-to-day
-      coordination and ops.
+      >, building docs, tools, and internal workflows to reduce recurring
+      friction. Lately, I’ve also been experimenting with AI workflows for
+      day-to-day coordination and ops.
     </p>
 
     <div class="mt-8 flex flex-wrap gap-3">

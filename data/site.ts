@@ -192,7 +192,7 @@ export const experienceItems: ExperienceItem[] = [
       { name: "Atomic", url: "https://atomic.financial", highlight: true },
     ],
     description:
-      "Rearchitected documentation platforms, interviewed developers, created technical content, ran office hours, and migrated an 800-plus-member developer community from Slack to Discord and GitHub Discussions.",
+      "Led banking-platform integrations and built developer docs, quickstarts, Postman tooling, and product videos at Atomic; rearchitected the documentation platform, ran office hours, interviewed developers, and migrated Fluree’s developer community from Slack to Discord and GitHub Discussions.",
   },
   {
     role: "Software Developer",
@@ -202,7 +202,7 @@ export const experienceItems: ExperienceItem[] = [
       { name: "Bank of America" },
     ],
     description:
-      "Built enterprise software across Angular web apps, natural-language understanding for chatbots, automated testing, CI/CD pipelines, and data integrations.",
+      "Built enterprise software (direct and consulting) across Angular web apps, chatbot workflows, automated testing, CI/CD pipelines, and data integrations.",
   },
 ];
 
@@ -215,7 +215,7 @@ export const speakingItems: SpeakingItem[] = [
   },
   {
     format: "Articles",
-    title: "Technical guides on Fluree, Docker, and developer communities",
+    title: "Posts on Fluree, Docker, and developer communities",
     source: "DEV Community",
     url: "https://dev.to/treybotard",
   },
