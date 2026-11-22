@@ -163,7 +163,7 @@ export const approachSteps: ApproachStep[] = [
   },
   {
     number: "02",
-    title: "Build the smallest useful fix",
+    title: "Build a small, useful fix",
     description:
       "Wire up the workflow, tool, queue, or doc needed to move the work without over-engineering it.",
   },
