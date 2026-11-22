@@ -1,42 +1,30 @@
-# Nuxt 3 Minimal Starter
+# treybotard.com
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Personal website for Trey Botard — Developer Experience, Customer Systems, and Applied AI.
 
-## Setup
+Built with **Nuxt 3**, **Tailwind CSS**, and **@nuxt/icon** (bundled locally).
 
-Make sure to install the dependencies:
+## Structure
+
+- [data/site.ts](data/site.ts) — Typed content, navigation, selected work, approach, experience, speaking, and social links
+- [composables/useActiveSection.ts](composables/useActiveSection.ts) — `IntersectionObserver` scrollspy for desktop and mobile navigation
+- [pages/index.vue](pages/index.vue) — Main page, SEO/OpenGraph metadata, and JSON-LD structured data
+- [layouts/default.vue](layouts/default.vue) — Sticky desktop sidebar, mobile header nav, and skip-to-content link
+- [components/](components/) — Page sections (`Bio`, `SelectedWork`, `Approach`, `Experience`, `Speaking`, `Contact`, `TBFooter`, navigation)
+
+## Development
 
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
 pnpm install
+pnpm dev
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
+## Validation & Build
 
 ```bash
-npm run dev
+pnpm typecheck
+pnpm build
+pnpm preview
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Static generation is also available via `pnpm generate`. The root route `/` is prerendered during `pnpm build`.

@@ -1,29 +1,22 @@
 <template>
-  <aside>
+  <aside aria-label="Site navigation">
     <LogoButton />
-    <section class="flex flex-col mt-4 space-y-3">
-      <div v-for="item of navItems">
-        <LeftNavButton :to="item.to" :text="item.text" />
-      </div>
-    </section>
+    <nav aria-label="Primary navigation" class="mt-6 flex flex-col space-y-1">
+      <LeftNavButton
+        v-for="item in navItems"
+        :key="item.to"
+        :to="item.to"
+        :text="item.text"
+        :active="activeSection === item.id"
+      />
+    </nav>
   </aside>
 </template>
 
 <script setup lang="ts">
-import type { LeftNavItem } from "~/components/LeftNavButton.vue";
+import { navItems } from "~/data/site";
 
-const navItems = new Array<LeftNavItem>(
-  {
-    to: "/",
-    text: "Home",
-  },
-  {
-    to: "/#experience",
-    text: "Experience",
-  },
-  {
-    to: "/#speaking",
-    text: "Speaking",
-  },
-);
+defineProps<{
+  activeSection?: string;
+}>();
 </script>

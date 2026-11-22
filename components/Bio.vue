@@ -1,44 +1,80 @@
+<script setup lang="ts">
+import { siteConfig } from "~/data/site";
+</script>
+
 <template>
-  <div class="flex items-center mb-8 lg:mb-0">
-    <!-- TB image in mobile -->
-    <div class="lg:hidden">
-      <NuxtLink to="/">
+  <section id="top" class="scroll-mt-24">
+    <div class="mb-10 flex items-center lg:hidden">
+      <NuxtLink
+        to="/"
+        aria-label="Trey Botard — Home"
+        class="inline-flex items-center rounded p-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+      >
         <img
-          class="w-16 h-16"
-          src="~/assets/images/TB-logo-dark.jpg"
-          alt="TB logo"
+          class="h-12 w-12"
+          src="~/assets/images/TB-logo-dark.png"
+          alt=""
+          width="48"
+          height="48"
         />
+        <span
+          class="ml-3 font-display text-2xl font-medium tracking-tight text-white"
+        >
+          {{ siteConfig.name }}
+        </span>
       </NuxtLink>
     </div>
-    <h1 class="font-caveat ml-4 lg:ml-0 text-5xl">Trey Botard</h1>
-  </div>
-  <p class="mt-8">
-    I lead
-    <b>Developer Relations</b> at
-    <NuxtLink
-      class="hover:underline hover:opacity-100 text-blue-400 transition-opacity font-bold"
-      to="https://atomic.financial"
-      target="_blank"
+
+    <p class="font-mono text-xs font-medium uppercase tracking-[0.18em] text-blue-400">
+      Developer Relations · Technical Adoption · Applied AI
+    </p>
+    <h1
+      class="mt-5 font-display text-4xl font-medium leading-[1.12] tracking-tight text-white sm:text-5xl"
     >
-      Atomic Financial</NuxtLink
-    >
-    simplifying financial connectivity so tech teams can build and ship fast.
-  </p>
-  <p class="mt-6">
-    With nearly a decade of experience in the tech industry, I'm dedicated to
-    empowering developers to craft delightful, connected experiences. Before
-    joining <b>Atomic</b> as a Developer Advocate, I served as a Developer
-    Advocate at <b>Fluree</b>, a semantic graph database company, and have
-    developed software solutions at <b>Lincoln Financial</b>, <b>Volvo</b>, and
-    <b>Bank of America</b> across areas including web development, natural
-    language understanding, automation, and data integrations.
-  </p>
-  <p class="mt-6">
-    Building tools that help technical teams succeed has become a passion of
-    mine; whether that tool is a well-architected docs site, a demo repo, a
-    thoughtful diagram, a clear presentation of an integration architecture. I
-    lead with empathy, aiming to understand and streamline the end-to-end
-    journey of developers to make their work lives more efficient, productive,
-    and focused on outcomes, not obstacles.
-  </p>
+      I turn fragmented developer and customer work into systems that help teams
+      ship, learn, and scale.
+    </h1>
+    <p class="mt-7 max-w-2xl text-lg leading-8 text-zinc-300">
+      I’m the {{ siteConfig.role }} at
+      <NuxtLink
+        :to="siteConfig.companyUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="rounded text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:text-blue-300 hover:decoration-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+      >
+        {{ siteConfig.company
+        }}<span class="sr-only"> (opens in new tab)</span></NuxtLink
+      >. I work where customer reality, product, and engineering meet, finding
+      recurring friction, building workflows and tools that remove it, and
+      turning what works into reusable operating systems, documentation, and
+      enablement.
+    </p>
+    <p class="mt-5 max-w-2xl text-lg leading-8 text-zinc-300">
+      Today, that includes applying AI where it can improve context,
+      coordination, and decision-making, not adding AI for its own sake.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <NuxtLink
+        to="/#work"
+        class="rounded bg-blue-600 px-5 py-3 font-medium text-white transition-colors hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+      >
+        Explore selected work
+      </NuxtLink>
+      <NuxtLink
+        :to="siteConfig.linkedinUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group inline-flex items-center gap-1.5 rounded border border-zinc-700 px-5 py-3 font-medium text-zinc-100 transition-colors hover:border-zinc-500 hover:bg-zinc-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+      >
+        <span>Connect on LinkedIn</span>
+        <span
+          aria-hidden="true"
+          class="text-zinc-400 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-zinc-200"
+          >↗</span
+        >
+        <span class="sr-only"> (opens in new tab)</span>
+      </NuxtLink>
+    </div>
+  </section>
 </template>

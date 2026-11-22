@@ -1,13 +1,45 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ['@nuxtjs/tailwindcss', '@nuxt/icon'],
-	app: {
-		head: {
-			link: [
-				{ rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-				{ rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-				{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Geist:wght@100;200;300;400;500;600;700;800;900&display=swap' }
-			]
-		}
-	}
-})
+  compatibilityDate: "2025-05-15",
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/icon"],
+  icon: {
+    clientBundle: {
+      scan: true,
+      icons: [
+        "line-md:linkedin",
+        "line-md:github",
+        "line-md:bluesky",
+        "line-md:instagram",
+        "line-md:youtube",
+      ],
+    },
+  },
+  routeRules: {
+    "/": { prerender: true },
+  },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "en",
+      },
+      title:
+        "Trey Botard — Developer Experience, Customer Systems, and Applied AI",
+      meta: [{ name: "theme-color", content: "#09090b" }],
+      link: [
+        { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: "",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap",
+        },
+      ],
+    },
+  },
+});
