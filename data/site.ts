@@ -47,8 +47,8 @@ export type ExperienceItem = {
 
 export type SpeakingItem = {
   format: string;
-  venue: string;
-  detail: string;
+  title: string;
+  source: string;
   url?: string;
 };
 
@@ -209,54 +209,54 @@ export const experienceItems: ExperienceItem[] = [
 export const speakingItems: SpeakingItem[] = [
   {
     format: "Article",
-    venue: "The Future of Open Finance: Navigating the Seas of Change",
-    detail: "Atomic Blog",
+    title: "The Future of Open Finance: Navigating the Seas of Change",
+    source: "Atomic Blog",
     url: "https://atomic.financial/insights/the-future-of-open-finance-navigating-the-seas-of-change/",
   },
   {
-    format: "Writing",
-    venue: "DEV Community",
-    detail: "Technical guides on Fluree, Docker, and developer communities",
+    format: "Articles",
+    title: "Technical guides on Fluree, Docker, and developer communities",
+    source: "DEV Community",
     url: "https://dev.to/treybotard",
   },
   {
-    format: "Speaker",
-    venue: "Financial Data Exchange (FDX)",
-    detail: "Speaker at the 2024 and 2025 Spring Global Summits",
+    format: "Talks",
+    title: "Spring Global Summit talks",
+    source: "Financial Data Exchange (FDX) · 2024 and 2025",
   },
   {
-    format: "Speaker",
-    venue: "FinovateSpring",
-    detail: "Featured speaker",
+    format: "Demo",
+    title: "Atomic PayLink demo",
+    source: "FinovateSpring · 2024",
     url: "https://finovate.com/videos/finovatespring-2024-atomic/",
   },
   {
     format: "Talk",
-    venue: "The Knowledge Graph Conference",
-    detail: "“Bringing Time and Truth to Semantic Data”",
+    title: "Bringing Time and Truth to Semantic Data",
+    source: "The Knowledge Graph Conference · 2021",
     url: "https://www.knowledgegraph.tech/speakers/trey-botard/",
   },
   {
     format: "Podcast",
-    venue: "Fireside with Voxgig, Episode 238",
-    detail: "“Head of Developer Relations at Atomic”",
+    title: "Head of Developer Relations at Atomic",
+    source: "Fireside with Voxgig · Episode 238",
     url: "https://open.spotify.com/episode/6WeXJStHxl2Lx1DF45rmMP",
   },
   {
     format: "Podcast",
-    venue: "The State of Developer Education",
-    detail: "“Which Department Does DevRel Really Belong to?”",
+    title: "Which Department Does DevRel Really Belong to?",
+    source: "The State of Developer Education",
     url: "https://www.youtube.com/watch?v=0fJMkx7y3XY",
   },
   {
     format: "Podcast",
-    venue: "Whose Bottom Line Is It Anyway?",
-    detail: "“Intimacy with finance: making taxes a year-round affair” (with april)",
+    title: "Intimacy with finance: making taxes a year-round affair",
+    source: "Whose Bottom Line Is It Anyway? · with april",
   },
   {
     format: "Advisory",
-    venue: "DevNetwork",
-    detail: "Developer Evangelist/Advocate Advisory Board",
+    title: "Developer Evangelist/Advocate Advisory Board",
+    source: "DevNetwork",
   },
 ];
 

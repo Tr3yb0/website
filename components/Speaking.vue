@@ -18,7 +18,7 @@ import { speakingItems } from "~/data/site";
     <ul class="mt-8 divide-y divide-zinc-800/80 border-y border-zinc-800/80">
       <li
         v-for="item in speakingItems"
-        :key="item.venue"
+        :key="item.title"
         class="flex flex-col gap-2 py-4 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
       >
         <div class="min-w-0">
@@ -29,7 +29,7 @@ import { speakingItems } from "~/data/site";
             rel="noopener noreferrer"
             class="group inline-flex items-baseline gap-1.5 rounded font-medium text-blue-400 transition-colors hover:text-blue-300 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
           >
-            <span>{{ item.venue }}</span>
+            <span>{{ item.title }}</span>
             <span
               aria-hidden="true"
               class="text-xs transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
@@ -37,9 +37,9 @@ import { speakingItems } from "~/data/site";
             >
             <span class="sr-only"> (opens in new tab)</span>
           </NuxtLink>
-          <span v-else class="font-medium text-white">{{ item.venue }}</span>
+          <span v-else class="font-medium text-white">{{ item.title }}</span>
           <p class="mt-1 text-sm text-zinc-400">
-            {{ item.detail }}
+            {{ item.source }}
           </p>
         </div>
 
