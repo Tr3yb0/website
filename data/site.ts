@@ -222,10 +222,9 @@ export const speakingItems: SpeakingItem[] = [
     url: "https://atomic.financial/insights/the-future-of-open-finance-navigating-the-seas-of-change/",
   },
   {
-    format: "Articles",
-    title: "Posts on Fluree, Docker, and developer communities",
-    source: "DEV Community",
-    url: "https://dev.to/treybotard",
+    format: "Talk",
+    title: "From Income to Outflow: Building the Open Finance Action Layer",
+    source: "FDX Spring Global Summit 2025",
   },
   {
     format: "Talk",
@@ -234,21 +233,10 @@ export const speakingItems: SpeakingItem[] = [
     url: "https://www.linkedin.com/posts/atomic-fi_fdxglobalsummit-activity-7174084428409815040-K0we",
   },
   {
-    format: "Talk",
-    title: "From Income to Outflow: Building the Open Finance Action Layer",
-    source: "FDX Spring Global Summit 2025",
-  },
-  {
     format: "Demo",
     title: "Atomic PayLink demo",
     source: "FinovateSpring · 2024",
     url: "https://finovate.com/videos/finovatespring-2024-atomic/",
-  },
-  {
-    format: "Talk",
-    title: "Bringing Time and Truth to Semantic Data",
-    source: "The Knowledge Graph Conference · 2021",
-    url: "https://watch.knowledgegraph.tech/videos/trey-botard-bringing-time-truth-to-semantic-data",
   },
   {
     format: "Podcast",
@@ -267,6 +255,18 @@ export const speakingItems: SpeakingItem[] = [
     title: "Tax Reform and the Future of Tax Technology",
     source: "april · Whose Bottom Line Is It Anyway? · Episode 4",
     url: "https://music.amazon.in/podcasts/b3db1964-b153-4960-acd4-4c527eb47bba/episodes/0ab15916-7069-4a4a-b0a0-4e1aecee8c47/whose-bottom-line-is-it-anyway-tax-reform-and-the-future-of-tax-technology",
+  },
+  {
+    format: "Talk",
+    title: "Bringing Time and Truth to Semantic Data",
+    source: "The Knowledge Graph Conference · 2021",
+    url: "https://watch.knowledgegraph.tech/videos/trey-botard-bringing-time-truth-to-semantic-data",
+  },
+  {
+    format: "Articles",
+    title: "Posts on Fluree, Docker, and developer communities",
+    source: "DEV Community",
+    url: "https://dev.to/treybotard",
   },
   {
     format: "Advisory",
