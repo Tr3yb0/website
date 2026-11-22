@@ -209,8 +209,8 @@ export const experienceItems: ExperienceItem[] = [
 export const speakingItems: SpeakingItem[] = [
   {
     format: "Article",
-    venue: "Atomic Blog",
-    detail: "“The Future of Open Finance: Navigating the Seas of Change”",
+    venue: "The Future of Open Finance: Navigating the Seas of Change",
+    detail: "Atomic Blog",
     url: "https://atomic.financial/insights/the-future-of-open-finance-navigating-the-seas-of-change/",
   },
   {
