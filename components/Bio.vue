@@ -5,8 +5,9 @@ import { siteConfig } from "~/data/site";
 <template>
   <section id="top" class="scroll-mt-24">
     <p
-      class="font-mono text-xs font-medium uppercase tracking-[0.18em] text-blue-400"
+      class="font-mono text-xs font-medium uppercase leading-5 tracking-[0.18em] text-blue-400"
     >
+      <span class="text-zinc-200">{{ siteConfig.name }}</span> ·
       {{ siteConfig.role }} ·
       <span class="text-atomic">{{ siteConfig.company }}</span>
     </p>

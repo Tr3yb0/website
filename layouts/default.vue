@@ -13,22 +13,15 @@ const activeSection = useActiveSection();
       Skip to main content
     </a>
 
-    <div class="flex justify-center px-4 pb-1 pt-5 sm:hidden">
-      <LogoButton />
-    </div>
-
     <header
       class="sticky top-0 z-20 border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur lg:hidden"
     >
       <div
-        class="mx-auto flex max-w-3xl items-center justify-center px-3 py-2.5 sm:justify-between sm:gap-4 sm:px-4 sm:py-3"
+        class="mx-auto flex max-w-3xl items-center justify-center px-3 py-2.5 sm:justify-start sm:px-4"
       >
-        <div class="hidden shrink-0 sm:block">
-          <LogoButton class="-ml-1" />
-        </div>
         <nav
           aria-label="Primary navigation"
-          class="flex min-w-0 items-center justify-center gap-1 overflow-x-auto sm:justify-end"
+          class="flex min-w-0 items-center justify-center gap-1 overflow-x-auto sm:-ml-2.5 sm:justify-start"
         >
           <NuxtLink
             v-for="item in navItems"
