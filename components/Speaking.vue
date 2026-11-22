@@ -3,14 +3,19 @@ import { speakingItems } from "~/data/site";
 </script>
 
 <template>
-  <section id="speaking" class="mt-20 scroll-mt-24">
-    <h2
-      class="font-display text-2xl font-medium tracking-tight text-white sm:text-3xl"
+  <section id="speaking" class="mt-24 scroll-mt-24">
+    <p
+      class="font-mono text-xs font-medium uppercase tracking-[0.18em] text-blue-400"
     >
-      Speaking & community
+      Speaking and community
+    </p>
+    <h2
+      class="mt-3 font-display text-3xl font-medium tracking-tight text-white sm:text-[2rem]"
+    >
+      Talks, podcasts, and advisory
     </h2>
 
-    <ul class="mt-6 divide-y divide-zinc-800/80 border-y border-zinc-800/80">
+    <ul class="mt-8 divide-y divide-zinc-800/80 border-y border-zinc-800/80">
       <li
         v-for="item in speakingItems"
         :key="item.venue"

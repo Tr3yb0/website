@@ -192,3 +192,9 @@ export const speakingItems: SpeakingItem[] = [
     detail: "Developer Evangelist/Advocate Advisory Board",
   },
 ];
+
+export const connectTopics = [
+  "Developer experience & adoption",
+  "Customer-facing operating systems",
+  "Practical AI workflows",
+] as const;
