@@ -220,9 +220,15 @@ export const speakingItems: SpeakingItem[] = [
     url: "https://dev.to/treybotard",
   },
   {
-    format: "Talks",
-    title: "Spring Global Summit talks",
-    source: "Financial Data Exchange (FDX) · 2024 and 2025",
+    format: "Talk",
+    title: "Supercharge Open Finance with Payroll Data",
+    source: "Financial Data Exchange (FDX) · Spring Global Summit 2024",
+    url: "https://fdx.imiscloud.com/iMISAnnualConference/Global-Summit-2024.aspx",
+  },
+  {
+    format: "Talk",
+    title: "Spring Global Summit appearance",
+    source: "Financial Data Exchange (FDX) · 2025",
   },
   {
     format: "Demo",
@@ -234,7 +240,7 @@ export const speakingItems: SpeakingItem[] = [
     format: "Talk",
     title: "Bringing Time and Truth to Semantic Data",
     source: "The Knowledge Graph Conference · 2021",
-    url: "https://www.knowledgegraph.tech/speakers/trey-botard/",
+    url: "https://watch.knowledgegraph.tech/videos/trey-botard-bringing-time-truth-to-semantic-data",
   },
   {
     format: "Podcast",
@@ -250,8 +256,9 @@ export const speakingItems: SpeakingItem[] = [
   },
   {
     format: "Podcast",
-    title: "Intimacy with finance: making taxes a year-round affair",
-    source: "Whose Bottom Line Is It Anyway? · with april",
+    title: "Tax Reform and the Future of Tax Technology",
+    source: "Whose Bottom Line Is It Anyway? · Episode 4",
+    url: "https://music.amazon.in/podcasts/b3db1964-b153-4960-acd4-4c527eb47bba/episodes/0ab15916-7069-4a4a-b0a0-4e1aecee8c47/whose-bottom-line-is-it-anyway-tax-reform-and-the-future-of-tax-technology",
   },
   {
     format: "Advisory",
