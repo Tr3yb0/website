@@ -222,8 +222,8 @@ export const speakingItems: SpeakingItem[] = [
   {
     format: "Talk",
     title: "Supercharge Open Finance with Payroll Data",
-    source: "Financial Data Exchange (FDX) · Spring Global Summit 2024",
-    url: "https://fdx.imiscloud.com/iMISAnnualConference/Global-Summit-2024.aspx",
+    source: "FDX Spring Global Summit 2024 · Atomic recap",
+    url: "https://www.linkedin.com/posts/atomic-fi_fdxglobalsummit-activity-7174084428409815040-K0we",
   },
   {
     format: "Talk",
