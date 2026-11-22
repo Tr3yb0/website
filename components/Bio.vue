@@ -4,43 +4,41 @@ import { siteConfig } from "~/data/site";
 
 <template>
   <section id="top" class="scroll-mt-24">
-    <div class="mb-10 flex items-center lg:hidden">
+    <div class="mb-8 flex items-center lg:hidden">
       <NuxtLink
         to="/"
         aria-label="Trey Botard — Home"
-        class="inline-flex items-center rounded p-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+        class="inline-flex items-center rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-400"
       >
         <img
-          class="h-12 w-12"
+          class="h-9 w-9"
           src="~/assets/images/TB-logo-dark.png"
           alt=""
-          width="48"
-          height="48"
+          width="36"
+          height="36"
         />
-        <span
-          class="ml-3 font-display text-2xl font-medium tracking-tight text-white"
-        >
+        <span class="ml-3 text-base font-medium text-zinc-100">
           {{ siteConfig.name }}
         </span>
       </NuxtLink>
     </div>
 
-    <p class="font-mono text-xs font-medium uppercase tracking-[0.18em] text-blue-400">
+    <p class="text-sm text-zinc-500">
       Developer Relations · Technical Adoption · Applied AI
     </p>
     <h1
-      class="mt-5 font-display text-4xl font-medium leading-[1.12] tracking-tight text-white sm:text-5xl"
+      class="mt-4 text-3xl font-medium leading-snug tracking-tight text-white sm:text-[2.15rem] sm:leading-[1.2]"
     >
       I turn fragmented developer and customer work into systems that help teams
       ship, learn, and scale.
     </h1>
-    <p class="mt-7 max-w-2xl text-lg leading-8 text-zinc-300">
+    <p class="mt-6 text-base leading-7 text-zinc-300">
       I’m the {{ siteConfig.role }} at
       <NuxtLink
         :to="siteConfig.companyUrl"
         target="_blank"
         rel="noopener noreferrer"
-        class="rounded text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:text-blue-300 hover:decoration-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+        class="rounded text-zinc-100 underline decoration-zinc-700 underline-offset-4 transition-colors hover:text-white hover:decoration-zinc-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
       >
         {{ siteConfig.company
         }}<span class="sr-only"> (opens in new tab)</span></NuxtLink
@@ -49,30 +47,26 @@ import { siteConfig } from "~/data/site";
       turning what works into reusable operating systems, documentation, and
       enablement.
     </p>
-    <p class="mt-5 max-w-2xl text-lg leading-8 text-zinc-300">
+    <p class="mt-4 text-base leading-7 text-zinc-400">
       Today, that includes applying AI where it can improve context,
       coordination, and decision-making, not adding AI for its own sake.
     </p>
 
-    <div class="mt-8 flex flex-wrap gap-3">
+    <div class="mt-7 flex flex-wrap items-center gap-5 text-sm">
       <NuxtLink
         to="/#work"
-        class="rounded bg-blue-600 px-5 py-3 font-medium text-white transition-colors hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+        class="rounded bg-zinc-100 px-4 py-2 font-medium text-zinc-950 transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
       >
-        Explore selected work
+        Selected work
       </NuxtLink>
       <NuxtLink
         :to="siteConfig.linkedinUrl"
         target="_blank"
         rel="noopener noreferrer"
-        class="group inline-flex items-center gap-1.5 rounded border border-zinc-700 px-5 py-3 font-medium text-zinc-100 transition-colors hover:border-zinc-500 hover:bg-zinc-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+        class="inline-flex items-center gap-1 rounded text-zinc-300 underline decoration-zinc-700 underline-offset-4 transition-colors hover:text-white hover:decoration-zinc-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
       >
-        <span>Connect on LinkedIn</span>
-        <span
-          aria-hidden="true"
-          class="text-zinc-400 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-zinc-200"
-          >↗</span
-        >
+        <span>LinkedIn</span>
+        <span aria-hidden="true" class="text-xs text-zinc-500">↗</span>
         <span class="sr-only"> (opens in new tab)</span>
       </NuxtLink>
     </div>

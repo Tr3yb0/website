@@ -3,29 +3,32 @@ import { approachSteps } from "~/data/site";
 </script>
 
 <template>
-  <section id="approach" class="mt-24 scroll-mt-24">
-    <p class="font-mono text-xs font-medium uppercase tracking-[0.18em] text-blue-400">
-      Approach
-    </p>
-    <h2 class="mt-3 font-display text-3xl font-medium tracking-tight text-white sm:text-[2rem]">
+  <section
+    id="approach"
+    class="mt-16 scroll-mt-24 border-t border-zinc-800/80 pt-12"
+  >
+    <h2 class="text-lg font-medium text-white">Approach</h2>
+    <p class="mt-2 text-base leading-7 text-zinc-400">
       Problem → deployed system → reusable pattern
-    </h2>
+    </p>
 
-    <ol class="mt-10 grid gap-8 md:grid-cols-3">
+    <ol class="mt-8 space-y-6">
       <li
         v-for="step in approachSteps"
         :key="step.number"
-        class="border-t border-zinc-800 pt-5"
+        class="grid gap-1 sm:grid-cols-[2.5rem_1fr] sm:gap-4"
       >
-        <p class="font-mono text-sm font-medium text-blue-400">
+        <span class="font-mono text-xs text-zinc-500 sm:pt-1">
           {{ step.number }}
-        </p>
-        <h3 class="mt-3 text-lg font-semibold text-white">
-          {{ step.title }}
-        </h3>
-        <p class="mt-3 leading-7 text-zinc-300">
-          {{ step.description }}
-        </p>
+        </span>
+        <div>
+          <h3 class="text-base font-medium text-zinc-100">
+            {{ step.title }}
+          </h3>
+          <p class="mt-1.5 text-base leading-7 text-zinc-400">
+            {{ step.description }}
+          </p>
+        </div>
       </li>
     </ol>
   </section>

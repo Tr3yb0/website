@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen bg-zinc-950 font-sans text-zinc-200 antialiased selection:bg-blue-500/30 selection:text-white"
+    class="min-h-screen bg-zinc-950 font-sans text-zinc-300 antialiased selection:bg-zinc-700 selection:text-white"
   >
     <NuxtLayout>
       <NuxtPage />
