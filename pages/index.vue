@@ -12,7 +12,7 @@ useSeoMeta({
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogImageAlt:
-    "Trey Botard, Director of Developer Relations at Atomic: developer experience, customer operations, and AI workflows",
+    "Trey Botard, Strategic Initiatives at Atomic: new product launches, customer systems, and AI workflows",
   twitterCard: "summary_large_image",
   twitterTitle: siteConfig.title,
   twitterDescription: siteConfig.twitterDescription,
@@ -40,6 +40,8 @@ const structuredData = {
         addressCountry: "US",
       },
       knowsAbout: [
+        "Strategic Initiatives",
+        "New Product Launches",
         "Developer Relations",
         "Developer Experience",
         "Customer Systems",

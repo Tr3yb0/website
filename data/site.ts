@@ -54,7 +54,7 @@ export type SpeakingItem = {
 
 export const siteConfig = {
   name: "Trey Botard",
-  role: "Director of Developer Relations",
+  role: "Strategic Initiatives",
   company: "Atomic",
   companyUrl: "https://atomic.financial",
   location: "Raleigh, North Carolina",
@@ -62,11 +62,11 @@ export const siteConfig = {
   ogImage: "https://www.treybotard.com/og.png",
   title: "Trey Botard",
   description:
-    "Director of Developer Relations at Atomic. Building developer experience, customer operations systems, and AI workflows.",
+    "Strategic Initiatives at Atomic. Helping take new products from early concepts to first customer launches, plus developer experience, customer operations systems, and AI workflows.",
   ogDescription:
-    "Director of Developer Relations at Atomic. Developer experience, customer operations systems, and AI workflows.",
+    "Strategic Initiatives at Atomic. New product launches, customer systems, developer experience, and AI workflows.",
   twitterDescription:
-    "Director of Developer Relations at Atomic. Developer experience, customer systems, and AI workflows.",
+    "Strategic Initiatives at Atomic. New product launches, customer systems, and AI workflows.",
   linkedinUrl: "https://www.linkedin.com/in/treybotard",
   githubUrl: "https://github.com/tr3yb0",
 } as const;
@@ -177,13 +177,21 @@ export const approachSteps: ApproachStep[] = [
 
 export const experienceItems: ExperienceItem[] = [
   {
-    role: "Director of Developer Relations",
+    role: "Strategic Initiatives",
     companies: [
       { name: "Atomic", url: "https://atomic.financial", highlight: true },
     ],
     current: true,
     description:
-      "Leading developer experience and technical adoption, covering public docs and API enablement, customer implementation, internal operating systems, enterprise delivery, and AI workflows.",
+      "Helping take new products and platform expansions from early customer pitches through first implementations, beta go-lives with Product and Engineering, and repeatable handoffs to client operations.",
+  },
+  {
+    role: "Director of Developer Relations",
+    companies: [
+      { name: "Atomic", url: "https://atomic.financial", highlight: true },
+    ],
+    description:
+      "Led developer experience and technical adoption, covering public docs and API enablement, customer implementation, internal operating systems, enterprise delivery, and AI workflows.",
   },
   {
     role: "Developer Advocate",
@@ -268,6 +276,7 @@ export const speakingItems: SpeakingItem[] = [
 ];
 
 export const connectTopics = [
+  "New product launches",
   "Developer experience & adoption",
   "Customer-facing operating systems",
   "AI workflows",

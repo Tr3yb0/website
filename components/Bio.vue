@@ -38,8 +38,7 @@ import { siteConfig } from "~/data/site";
       developers and teams.
     </h1>
     <p class="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
-      I work at the intersection of developer experience, customer operations,
-      and engineering at
+      I work on Strategic Initiatives in the Product org at
       <NuxtLink
         :to="siteConfig.companyUrl"
         target="_blank"
@@ -48,9 +47,10 @@ import { siteConfig } from "~/data/site";
       >
         {{ siteConfig.company
         }}<span class="sr-only"> (opens in new tab)</span></NuxtLink
-      >, building docs, tools, and internal workflows to reduce recurring
-      friction. Lately, I’ve also been experimenting with AI workflows for
-      day-to-day coordination and ops.
+      >, helping take new products from early customer conversations through
+      first implementations, beta go-lives, and handoff to client operations.
+      Lately, I’ve also been experimenting with AI workflows for day-to-day
+      coordination and ops.
     </p>
 
     <div class="mt-8 flex flex-wrap gap-3">
