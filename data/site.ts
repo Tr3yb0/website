@@ -227,8 +227,9 @@ export const speakingItems: SpeakingItem[] = [
   },
   {
     format: "Talk",
-    title: "Spring Global Summit appearance",
-    source: "Financial Data Exchange (FDX) · 2025",
+    title: "From Income to Outflow: Building the Open Finance Action Layer",
+    source: "FDX Spring Global Summit 2025 · Archived agenda",
+    url: "https://web.archive.org/web/20250414231310/https://www.financialdataexchange.org/FDX/FDX-Global-Summit.aspx",
   },
   {
     format: "Demo",
