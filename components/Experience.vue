@@ -3,36 +3,47 @@ import { experienceItems } from "~/data/site";
 </script>
 
 <template>
-  <section
-    id="experience"
-    class="mt-16 scroll-mt-24 border-t border-zinc-800/80 pt-12"
-  >
-    <h2 class="text-lg font-medium text-white">Experience</h2>
+  <section id="experience" class="mt-20 scroll-mt-24">
+    <h2
+      class="font-display text-2xl font-medium tracking-tight text-white sm:text-3xl"
+    >
+      Experience
+    </h2>
 
-    <div class="mt-8 space-y-7">
+    <div class="mt-7 space-y-7">
       <article
         v-for="item in experienceItems"
         :key="`${item.role}-${item.company}`"
-        class="border-l pl-4"
-        :class="item.current ? 'border-zinc-400' : 'border-zinc-800'"
+        class="border-l-2 pl-5"
+        :class="item.current ? 'border-blue-500' : 'border-zinc-800'"
       >
-        <h3 class="text-base font-medium text-zinc-100">
-          {{ item.role }}
-        </h3>
-        <p class="mt-0.5 text-sm text-zinc-500">
+        <div class="flex flex-wrap items-center gap-2.5">
+          <h3 class="text-base font-semibold text-white">
+            {{ item.role }}
+          </h3>
+          <span
+            v-if="item.current"
+            class="rounded-full border border-blue-500/30 bg-blue-950/50 px-2 py-0.5 font-mono text-xs text-blue-300"
+          >
+            Current
+          </span>
+        </div>
+        <p
+          class="mt-0.5 text-sm"
+          :class="item.current ? 'text-blue-400' : 'text-zinc-400'"
+        >
           <NuxtLink
             v-if="item.companyUrl"
             :to="item.companyUrl"
             target="_blank"
             rel="noopener noreferrer"
-            class="rounded text-zinc-300 underline decoration-zinc-700 underline-offset-4 transition-colors hover:text-white hover:decoration-zinc-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
+            class="rounded hover:text-blue-300 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
           >
             {{ item.company }}<span class="sr-only"> (opens in new tab)</span>
           </NuxtLink>
           <span v-else>{{ item.company }}</span>
-          <span v-if="item.current"> · Current</span>
         </p>
-        <p class="mt-2.5 text-base leading-7 text-zinc-400">
+        <p class="mt-2.5 max-w-2xl leading-7 text-zinc-300">
           {{ item.description }}
         </p>
       </article>

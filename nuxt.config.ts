@@ -22,8 +22,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
-      title:
-        "Trey Botard — Developer Experience, Customer Systems, and Applied AI",
+      title: "Trey Botard",
       meta: [{ name: "theme-color", content: "#09090b" }],
       link: [
         { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
@@ -37,7 +36,7 @@ export default defineNuxtConfig({
         },
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap",
+          href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap",
         },
       ],
     },

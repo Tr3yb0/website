@@ -47,13 +47,13 @@ export const siteConfig = {
   location: "Raleigh, North Carolina",
   url: "https://www.treybotard.com/",
   ogImage: "https://www.treybotard.com/og.png",
-  title: "Trey Botard — Developer Experience, Customer Systems, and Applied AI",
+  title: "Trey Botard",
   description:
-    "Trey Botard turns fragmented developer and customer work into systems that help teams ship, learn, and scale. Director of Developer Relations at Atomic Financial.",
+    "Director of Developer Relations at Atomic Financial. Building developer experience, customer operations systems, and practical AI workflows.",
   ogDescription:
-    "Developer experience, customer systems, and practical AI workflows built from real operational friction and turned into reusable tools, playbooks, and operating systems.",
+    "Director of Developer Relations at Atomic Financial — developer experience, customer operations systems, and practical AI workflows.",
   twitterDescription:
-    "Developer experience, customer systems, and practical AI workflows built from real operational friction.",
+    "Director of Developer Relations at Atomic Financial — developer experience, customer systems, and practical AI workflows.",
   linkedinUrl: "https://www.linkedin.com/in/treybotard",
   githubUrl: "https://github.com/tr3yb0",
 } as const;
@@ -97,46 +97,29 @@ export const socialProfiles: SocialProfile[] = [
 export const selectedWorkItems: SelectedWorkItem[] = [
   {
     eyebrow: "Atomic Financial · Customer Operations",
-    title: "From scattered customer requests to a customer-operations system",
+    title: "Customer operations in Pylon",
     paragraphs: [
-      "Customer work was spread across calls, Slack, email, spreadsheets, direct messages, and issue trackers. I centralized intake, connected requests to customer context, clarified ownership and escalation paths, and rebuilt the operating model in Pylon.",
-      "The resulting system supports customer context, implementation tracking, support work, reporting, and engineering escalation. From February through July 15, 2026, 235 of 277 issues assigned to me reached a closed or completed state.",
+      "Customer requests were scattered across calls, Slack, email, spreadsheets, and issue trackers. I centralized intake in Pylon, connected requests to customer context, and defined ownership and escalation paths across implementation, support, reporting, and engineering.",
+      "From February through July 15, 2026, 235 of 277 issues assigned to me reached a closed or completed state.",
     ],
-    tags: [
-      "Workflow discovery",
-      "Systems design",
-      "Cross-functional adoption",
-      "Durable operating boundaries",
-    ],
+    tags: ["Workflow discovery", "Systems design", "Cross-functional adoption"],
   },
   {
     eyebrow: "Atomic Financial · Developer Experience",
-    title: "From documentation to an executable developer experience",
+    title: "Executable developer experience",
     paragraphs: [
-      "Developers need more than explanations. They need working paths through a product. At Atomic, I built and connected API guidance, quickstarts, Postman workflows, demos, videos, SDK and webhook enablement, and release communications so developers and internal teams could exercise and troubleshoot a complex financial-connectivity platform.",
-      "I contributed 439 commits across 24 repositories, including 224 commits to public documentation.",
+      "Built and connected API guidance, quickstarts, Postman workflows, demos, videos, SDK and webhook enablement, and release notes so developers and internal teams have working paths through Atomic’s platform.",
+      "439 commits across 24 repositories, including 224 commits to public documentation.",
     ],
-    tags: [
-      "Developer adoption",
-      "Reusable technical assets",
-      "Self-service enablement",
-      "Platform thinking",
-    ],
+    tags: ["Developer adoption", "Docs & quickstarts", "Self-service enablement"],
   },
   {
-    eyebrow: "Current Lab · Applied AI",
-    title: "An AI-native operating layer for real work",
+    eyebrow: "Personal Lab · Applied AI",
+    title: "AI operating layer for everyday work",
     paragraphs: [
-      "I’m building and testing an AI-enabled operating layer for personal and household work across Linear, Calendar, and a local Markdown knowledge graph, with Notion used for selected shared pages. It routes commitments, time, context, and durable handoffs while preserving explicit sources of truth, draft-first safeguards, and human control.",
-      "The goal is not a clever demo. It is a system people can understand, trust, correct, and keep using.",
+      "Testing a local-first AI workflow layer for personal and household ops across Linear, Calendar, a local Markdown knowledge graph, and selected shared Notion pages—focused on explicit sources of truth, draft-first safeguards, and staying useful over time.",
     ],
-    tags: [
-      "AI workflow design",
-      "Tool routing",
-      "Safeguards",
-      "Evaluation",
-      "Real-user adoption",
-    ],
+    tags: ["AI workflows", "Tool routing", "Safeguards"],
     featured: true,
   },
 ];
@@ -144,21 +127,21 @@ export const selectedWorkItems: SelectedWorkItem[] = [
 export const approachSteps: ApproachStep[] = [
   {
     number: "01",
-    title: "Start with work as it actually happens",
+    title: "Start with real friction",
     description:
-      "I look across conversations, tickets, documents, dashboards, handoffs, and customer interactions to find repeated friction, not just the loudest request.",
+      "Look across tickets, handoffs, docs, and customer calls for what actually repeats—not just the loudest one-off ask.",
   },
   {
     number: "02",
-    title: "Build the smallest useful operating system",
+    title: "Build the smallest useful fix",
     description:
-      "I connect the context, ownership, workflow, and tools needed to move the work. The result might be a prototype, integration, queue, technical asset, or operating model.",
+      "Wire up the workflow, tool, queue, or doc needed to move the work without over-engineering it.",
   },
   {
     number: "03",
-    title: "Turn the solution into a reusable pattern",
+    title: "Hand it off cleanly",
     description:
-      "I document the pattern, define boundaries and ownership, measure what changed, and help long-term owners adopt it so I do not remain the permanent escalation path.",
+      "Document the pattern, set clear owners, and measure what changed so it runs without a permanent bottleneck.",
   },
 ];
 
@@ -169,19 +152,19 @@ export const experienceItems: ExperienceItem[] = [
     companyUrl: "https://atomic.financial",
     current: true,
     description:
-      "I lead developer experience and technical adoption for a financial-connectivity platform. My work spans public documentation and API enablement, customer implementation, cross-functional operating systems, enterprise delivery, and emerging AI-enabled workflows.",
+      "Leading developer experience and technical adoption—covering public docs and API enablement, customer implementation, internal operating systems, enterprise delivery, and practical AI workflows.",
   },
   {
     role: "Developer Advocate",
     company: "Fluree",
     description:
-      "I helped developers adopt semantic graph database technology by rearchitecting documentation, interviewing users, creating technical content, operating office hours, and moving an 800-plus-member community from Slack into Discord and GitHub Discussions.",
+      "Rearchitected documentation, interviewed users, created technical content, ran office hours, and migrated an 800-plus-member developer community from Slack to Discord and GitHub Discussions.",
   },
   {
     role: "Software Developer",
     company: "Lincoln Financial · Volvo · Bank of America",
     description:
-      "I built enterprise software across web development, natural-language understanding, automation, and data integrations. That engineering foundation still shapes how I investigate technical friction and work with product and engineering teams today.",
+      "Built enterprise software across web apps, natural-language understanding, automation, and data integrations.",
   },
 ];
 
