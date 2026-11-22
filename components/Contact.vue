@@ -18,8 +18,8 @@ import { connectTopics, siteConfig } from "~/data/site";
       Get in touch
     </h2>
     <p class="mt-4 max-w-2xl text-lg leading-8 text-zinc-300">
-      If you’re working on developer experience, customer operations, or AI
-      workflows, feel free to reach out.
+      If you’re working on new product launches, developer experience, customer
+      operations, or AI workflows, feel free to reach out.
     </p>
 
     <ul class="mt-5 flex flex-wrap gap-2" aria-label="Conversation topics">

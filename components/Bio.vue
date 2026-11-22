@@ -4,27 +4,6 @@ import { siteConfig } from "~/data/site";
 
 <template>
   <section id="top" class="scroll-mt-24">
-    <div class="mb-10 flex items-center lg:hidden">
-      <NuxtLink
-        to="/"
-        aria-label="Trey Botard, Home"
-        class="inline-flex items-center rounded p-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
-      >
-        <img
-          class="h-12 w-12"
-          src="~/assets/images/TB-logo-dark.png"
-          alt=""
-          width="48"
-          height="48"
-        />
-        <span
-          class="ml-3 font-display text-2xl font-medium tracking-tight text-white"
-        >
-          {{ siteConfig.name }}
-        </span>
-      </NuxtLink>
-    </div>
-
     <p
       class="font-mono text-xs font-medium uppercase tracking-[0.18em] text-blue-400"
     >
