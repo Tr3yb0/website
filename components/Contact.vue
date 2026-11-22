@@ -18,8 +18,8 @@ import { connectTopics, siteConfig } from "~/data/site";
       Let’s compare notes
     </h2>
     <p class="mt-4 max-w-2xl text-lg leading-8 text-zinc-300">
-      Working on developer experience, customer operations, or practical AI
-      workflows? Happy to compare notes.
+      Working on developer experience, customer operations, or AI workflows?
+      Happy to compare notes.
     </p>
 
     <ul class="mt-5 flex flex-wrap gap-2" aria-label="Conversation topics">

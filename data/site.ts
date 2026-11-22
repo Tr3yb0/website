@@ -11,7 +11,9 @@ export type SocialProfile = {
 };
 
 export type SelectedWorkItem = {
-  eyebrow: string;
+  organization: string;
+  organizationHighlight?: boolean;
+  category: string;
   title: string;
   paragraphs: string[];
   tags: string[];
@@ -42,18 +44,18 @@ export type SpeakingItem = {
 export const siteConfig = {
   name: "Trey Botard",
   role: "Director of Developer Relations",
-  company: "Atomic Financial",
+  company: "Atomic",
   companyUrl: "https://atomic.financial",
   location: "Raleigh, North Carolina",
   url: "https://www.treybotard.com/",
   ogImage: "https://www.treybotard.com/og.png",
   title: "Trey Botard",
   description:
-    "Director of Developer Relations at Atomic Financial. Building developer experience, customer operations systems, and practical AI workflows.",
+    "Director of Developer Relations at Atomic. Building developer experience, customer operations systems, and AI workflows.",
   ogDescription:
-    "Director of Developer Relations at Atomic Financial — developer experience, customer operations systems, and practical AI workflows.",
+    "Director of Developer Relations at Atomic. Developer experience, customer operations systems, and AI workflows.",
   twitterDescription:
-    "Director of Developer Relations at Atomic Financial — developer experience, customer systems, and practical AI workflows.",
+    "Director of Developer Relations at Atomic. Developer experience, customer systems, and AI workflows.",
   linkedinUrl: "https://www.linkedin.com/in/treybotard",
   githubUrl: "https://github.com/tr3yb0",
 } as const;
@@ -96,28 +98,31 @@ export const socialProfiles: SocialProfile[] = [
 
 export const selectedWorkItems: SelectedWorkItem[] = [
   {
-    eyebrow: "Atomic Financial · Customer Operations",
+    organization: "Atomic",
+    organizationHighlight: true,
+    category: "Customer Operations",
     title: "Customer operations in Pylon",
     paragraphs: [
       "Customer requests were scattered across calls, Slack, email, spreadsheets, and issue trackers. I centralized intake in Pylon, connected requests to customer context, and defined ownership and escalation paths across implementation, support, reporting, and engineering.",
-      "From February through July 15, 2026, 235 of 277 issues assigned to me reached a closed or completed state.",
     ],
     tags: ["Workflow discovery", "Systems design", "Cross-functional adoption"],
   },
   {
-    eyebrow: "Atomic Financial · Developer Experience",
+    organization: "Atomic",
+    organizationHighlight: true,
+    category: "Developer Experience",
     title: "Executable developer experience",
     paragraphs: [
       "Built and connected API guidance, quickstarts, Postman workflows, demos, videos, SDK and webhook enablement, and release notes so developers and internal teams have working paths through Atomic’s platform.",
-      "439 commits across 24 repositories, including 224 commits to public documentation.",
     ],
     tags: ["Developer adoption", "Docs & quickstarts", "Self-service enablement"],
   },
   {
-    eyebrow: "Personal Lab · Applied AI",
+    organization: "Personal Lab",
+    category: "Applied AI",
     title: "AI operating layer for everyday work",
     paragraphs: [
-      "Testing a local-first AI workflow layer for personal and household ops across Linear, Calendar, a local Markdown knowledge graph, and selected shared Notion pages—focused on explicit sources of truth, draft-first safeguards, and staying useful over time.",
+      "Testing a local-first AI workflow layer for personal and household ops across Linear, Calendar, a local Markdown knowledge graph, and selected shared Notion pages, focused on explicit sources of truth, draft-first safeguards, and staying useful over time.",
     ],
     tags: ["AI workflows", "Tool routing", "Safeguards"],
     featured: true,
@@ -129,7 +134,7 @@ export const approachSteps: ApproachStep[] = [
     number: "01",
     title: "Start with real friction",
     description:
-      "Look across tickets, handoffs, docs, and customer calls for what actually repeats—not just the loudest one-off ask.",
+      "Look across tickets, handoffs, docs, and customer calls for what actually repeats, not just the loudest one-off ask.",
   },
   {
     number: "02",
@@ -148,11 +153,11 @@ export const approachSteps: ApproachStep[] = [
 export const experienceItems: ExperienceItem[] = [
   {
     role: "Director of Developer Relations",
-    company: "Atomic Financial",
+    company: "Atomic",
     companyUrl: "https://atomic.financial",
     current: true,
     description:
-      "Leading developer experience and technical adoption—covering public docs and API enablement, customer implementation, internal operating systems, enterprise delivery, and practical AI workflows.",
+      "Leading developer experience and technical adoption, covering public docs and API enablement, customer implementation, internal operating systems, enterprise delivery, and AI workflows.",
   },
   {
     role: "Developer Advocate",
@@ -196,5 +201,5 @@ export const speakingItems: SpeakingItem[] = [
 export const connectTopics = [
   "Developer experience & adoption",
   "Customer-facing operating systems",
-  "Practical AI workflows",
+  "AI workflows",
 ] as const;

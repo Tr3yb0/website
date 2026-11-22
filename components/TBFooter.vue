@@ -5,7 +5,18 @@ import { siteConfig, socialProfiles } from "~/data/site";
 <template>
   <footer class="border-t border-zinc-800 pt-8 text-sm text-zinc-400">
     <p class="font-medium text-zinc-200">{{ siteConfig.name }}</p>
-    <p class="mt-1">{{ siteConfig.role }} at {{ siteConfig.company }}</p>
+    <p class="mt-1">
+      {{ siteConfig.role }} at
+      <NuxtLink
+        :to="siteConfig.companyUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="rounded font-medium text-atomic hover:text-atomic-light hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-atomic"
+      >
+        {{ siteConfig.company
+        }}<span class="sr-only"> (opens in new tab)</span>
+      </NuxtLink>
+    </p>
     <p>{{ siteConfig.location }}</p>
     <nav class="mt-5 flex flex-row gap-1.5" aria-label="Social profiles">
       <NuxtLink

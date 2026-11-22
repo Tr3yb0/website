@@ -12,7 +12,7 @@ useSeoMeta({
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogImageAlt:
-    "Trey Botard — Developer Relations, Technical Adoption, and Applied AI",
+    "Trey Botard: Developer Relations, Technical Adoption, and Applied AI",
   twitterCard: "summary_large_image",
   twitterTitle: siteConfig.title,
   twitterDescription: siteConfig.twitterDescription,

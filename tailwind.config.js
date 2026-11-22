@@ -3,6 +3,12 @@ import plugin from "tailwindcss/plugin";
 
 export const theme = {
   extend: {
+    colors: {
+      atomic: {
+        DEFAULT: "#9089FC",
+        light: "#B4A9FF",
+      },
+    },
     fontFamily: {
       display: ['"Newsreader"', "Georgia", "serif"],
       sans: ['"Plus Jakarta Sans"', "system-ui", "sans-serif"],

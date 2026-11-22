@@ -30,7 +30,10 @@ import { selectedWorkItems } from "~/data/site";
           class="font-mono text-xs font-medium uppercase tracking-[0.16em]"
           :class="item.featured ? 'text-blue-400' : 'text-zinc-400'"
         >
-          {{ item.eyebrow }}
+          <span :class="item.organizationHighlight ? 'text-atomic' : ''">{{
+            item.organization
+          }}</span>
+          <span> · {{ item.category }}</span>
         </p>
         <h3 class="mt-2.5 text-xl font-semibold text-white">
           {{ item.title }}

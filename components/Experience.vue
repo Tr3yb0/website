@@ -20,7 +20,7 @@ import { experienceItems } from "~/data/site";
         v-for="item in experienceItems"
         :key="`${item.role}-${item.company}`"
         class="border-l-2 pl-5"
-        :class="item.current ? 'border-blue-500' : 'border-zinc-700'"
+        :class="item.current ? 'border-atomic' : 'border-zinc-700'"
       >
         <div class="flex flex-wrap items-center gap-2.5">
           <h3 class="text-lg font-semibold text-white">
@@ -28,21 +28,21 @@ import { experienceItems } from "~/data/site";
           </h3>
           <span
             v-if="item.current"
-            class="rounded-full border border-blue-500/30 bg-blue-950/50 px-2.5 py-0.5 font-mono text-xs text-blue-300"
+            class="rounded-full border border-atomic/30 bg-atomic/10 px-2.5 py-0.5 font-mono text-xs text-atomic-light"
           >
             Current
           </span>
         </div>
         <p
           class="mt-0.5 text-sm"
-          :class="item.current ? 'text-blue-400' : 'text-zinc-400'"
+          :class="item.current ? 'text-atomic' : 'text-zinc-400'"
         >
           <NuxtLink
             v-if="item.companyUrl"
             :to="item.companyUrl"
             target="_blank"
             rel="noopener noreferrer"
-            class="rounded hover:text-blue-300 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+            class="rounded font-medium text-atomic hover:text-atomic-light hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-atomic"
           >
             {{ item.company }}<span class="sr-only"> (opens in new tab)</span>
           </NuxtLink>

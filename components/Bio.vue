@@ -7,7 +7,7 @@ import { siteConfig } from "~/data/site";
     <div class="mb-10 flex items-center lg:hidden">
       <NuxtLink
         to="/"
-        aria-label="Trey Botard — Home"
+        aria-label="Trey Botard, Home"
         class="inline-flex items-center rounded p-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
       >
         <img
@@ -28,7 +28,8 @@ import { siteConfig } from "~/data/site";
     <p
       class="font-mono text-xs font-medium uppercase tracking-[0.18em] text-blue-400"
     >
-      {{ siteConfig.role }} · {{ siteConfig.company }}
+      {{ siteConfig.role }} ·
+      <span class="text-atomic">{{ siteConfig.company }}</span>
     </p>
     <h1
       class="mt-5 font-display text-4xl font-medium leading-[1.12] tracking-tight text-white sm:text-5xl"
@@ -43,13 +44,13 @@ import { siteConfig } from "~/data/site";
         :to="siteConfig.companyUrl"
         target="_blank"
         rel="noopener noreferrer"
-        class="rounded text-white underline decoration-zinc-600 underline-offset-4 transition-colors hover:text-blue-300 hover:decoration-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+        class="rounded font-medium text-atomic underline decoration-atomic/40 underline-offset-4 transition-colors hover:text-atomic-light hover:decoration-atomic-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-atomic"
       >
         {{ siteConfig.company
         }}<span class="sr-only"> (opens in new tab)</span></NuxtLink
-      >—building docs, tools, and internal workflows that remove recurring
-      friction. Lately, I’ve also been building practical AI workflows for
-      day-to-day coordination and ops.
+      >, building docs, tools, and internal workflows that remove recurring
+      friction. Lately, I’ve also been building AI workflows for day-to-day
+      coordination and ops.
     </p>
 
     <div class="mt-8 flex flex-wrap gap-3">
