@@ -13,23 +13,29 @@ const activeSection = useActiveSection();
       Skip to main content
     </a>
 
+    <div class="flex justify-center px-4 pb-1 pt-5 sm:hidden">
+      <LogoButton />
+    </div>
+
     <header
       class="sticky top-0 z-20 border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur lg:hidden"
     >
       <div
-        class="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-2.5 sm:gap-4 sm:py-3"
+        class="mx-auto flex max-w-3xl items-center justify-center px-3 py-2.5 sm:justify-between sm:gap-4 sm:px-4 sm:py-3"
       >
-        <LogoButton hide-name-below-sm class="-ml-1 shrink-0" />
+        <div class="hidden shrink-0 sm:block">
+          <LogoButton class="-ml-1" />
+        </div>
         <nav
           aria-label="Primary navigation"
-          class="flex min-w-0 items-center justify-end gap-0.5 overflow-x-auto sm:gap-1"
+          class="flex min-w-0 items-center justify-center gap-1 overflow-x-auto sm:justify-end"
         >
           <NuxtLink
             v-for="item in navItems"
             :key="item.to"
             :to="item.to"
             :aria-current="activeSection === item.id ? 'location' : undefined"
-            class="inline-flex min-h-[36px] items-center whitespace-nowrap rounded px-1.5 py-1.5 text-[13px] font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 sm:px-2.5 sm:text-sm"
+            class="inline-flex min-h-[36px] items-center whitespace-nowrap rounded px-2 py-1.5 text-[13px] font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 sm:px-2.5 sm:text-sm"
             :class="
               activeSection === item.id
                 ? 'bg-zinc-800 text-white'

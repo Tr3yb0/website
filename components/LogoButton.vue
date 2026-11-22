@@ -1,9 +1,5 @@
 <script setup lang="ts">
 import { siteConfig } from "~/data/site";
-
-defineProps<{
-  hideNameBelowSm?: boolean;
-}>();
 </script>
 
 <template>
@@ -21,7 +17,6 @@ defineProps<{
     />
     <span
       class="whitespace-nowrap font-display text-lg font-medium tracking-tight text-white"
-      :class="hideNameBelowSm ? 'hidden sm:inline' : ''"
     >
       {{ siteConfig.name }}
     </span>
