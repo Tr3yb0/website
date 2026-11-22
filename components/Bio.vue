@@ -33,7 +33,8 @@ import { siteConfig } from "~/data/site";
     <h1
       class="mt-5 font-display text-4xl font-medium leading-[1.12] tracking-tight text-white sm:text-5xl"
     >
-      Building clearer paths for developers and teams.
+      Building clearer paths for<br />
+      developers and teams.
     </h1>
     <p class="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
       I work at the intersection of developer experience, customer operations,
