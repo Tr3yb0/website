@@ -18,7 +18,7 @@ import { experienceItems } from "~/data/site";
     <div class="mt-10 space-y-8">
       <article
         v-for="item in experienceItems"
-        :key="`${item.role}-${item.company}`"
+        :key="item.role"
         class="border-l-2 pl-5"
         :class="item.current ? 'border-atomic' : 'border-zinc-700'"
       >
@@ -33,20 +33,28 @@ import { experienceItems } from "~/data/site";
             Current
           </span>
         </div>
-        <p
-          class="mt-0.5 text-sm"
-          :class="item.current ? 'text-atomic' : 'text-zinc-400'"
-        >
-          <NuxtLink
-            v-if="item.companyUrl"
-            :to="item.companyUrl"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="rounded font-medium text-atomic hover:text-atomic-light hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-atomic"
+        <p class="mt-0.5 text-sm text-zinc-400">
+          <template
+            v-for="(company, index) in item.companies"
+            :key="company.name"
           >
-            {{ item.company }}<span class="sr-only"> (opens in new tab)</span>
-          </NuxtLink>
-          <span v-else>{{ item.company }}</span>
+            <span v-if="index > 0"> · </span>
+            <NuxtLink
+              v-if="company.url"
+              :to="company.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              :class="
+                company.highlight
+                  ? 'font-medium text-atomic hover:text-atomic-light focus-visible:outline-atomic'
+                  : 'text-zinc-300 hover:text-white focus-visible:outline-blue-400'
+              "
+            >
+              {{ company.name }}<span class="sr-only"> (opens in new tab)</span>
+            </NuxtLink>
+            <span v-else>{{ company.name }}</span>
+          </template>
         </p>
         <p class="mt-3 max-w-2xl leading-7 text-zinc-300">
           {{ item.description }}

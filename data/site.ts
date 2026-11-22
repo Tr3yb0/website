@@ -26,10 +26,15 @@ export type ApproachStep = {
   description: string;
 };
 
+export type ExperienceCompany = {
+  name: string;
+  url?: string;
+  highlight?: boolean;
+};
+
 export type ExperienceItem = {
   role: string;
-  company: string;
-  companyUrl?: string;
+  companies: ExperienceCompany[];
   current?: boolean;
   description: string;
 };
@@ -153,23 +158,31 @@ export const approachSteps: ApproachStep[] = [
 export const experienceItems: ExperienceItem[] = [
   {
     role: "Director of Developer Relations",
-    company: "Atomic",
-    companyUrl: "https://atomic.financial",
+    companies: [
+      { name: "Atomic", url: "https://atomic.financial", highlight: true },
+    ],
     current: true,
     description:
       "Leading developer experience and technical adoption, covering public docs and API enablement, customer implementation, internal operating systems, enterprise delivery, and AI workflows.",
   },
   {
     role: "Developer Advocate",
-    company: "Fluree",
+    companies: [
+      { name: "Fluree" },
+      { name: "Atomic", url: "https://atomic.financial", highlight: true },
+    ],
     description:
-      "Rearchitected documentation, interviewed users, created technical content, ran office hours, and migrated an 800-plus-member developer community from Slack to Discord and GitHub Discussions.",
+      "Rearchitected documentation platforms, interviewed developers, created technical content, ran office hours, and migrated an 800-plus-member developer community from Slack to Discord and GitHub Discussions.",
   },
   {
     role: "Software Developer",
-    company: "Lincoln Financial · Volvo · Bank of America",
+    companies: [
+      { name: "Lincoln Financial" },
+      { name: "Volvo" },
+      { name: "Bank of America" },
+    ],
     description:
-      "Built enterprise software across web apps, natural-language understanding, automation, and data integrations.",
+      "Built enterprise software across Angular web apps, natural-language understanding for chatbots, automated testing, CI/CD pipelines, and data integrations.",
   },
 ];
 
