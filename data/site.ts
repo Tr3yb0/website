@@ -252,7 +252,7 @@ export const speakingItems: SpeakingItem[] = [
   },
   {
     format: "Podcast",
-    title: "Head of Developer Relations at Atomic",
+    title: "From hospitality to DevRel and building customer trust",
     source: "Fireside with Voxgig · Episode 238",
     url: "https://www.voxgig.com/podcast/trey-botard-head-developer-relations-atomic",
   },
