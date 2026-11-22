@@ -222,7 +222,7 @@ export const speakingItems: SpeakingItem[] = [
   {
     format: "Speaker",
     venue: "Financial Data Exchange (FDX)",
-    detail: "Multiple speaking engagements",
+    detail: "Speaker at the 2024 and 2025 Spring Global Summits",
   },
   {
     format: "Speaker",
