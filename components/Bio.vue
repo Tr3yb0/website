@@ -44,7 +44,7 @@ import { siteConfig } from "~/data/site";
         :to="siteConfig.companyUrl"
         target="_blank"
         rel="noopener noreferrer"
-        class="rounded font-medium text-atomic underline decoration-atomic/40 underline-offset-4 transition-colors hover:text-atomic-light hover:decoration-atomic-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-atomic"
+        class="rounded font-medium text-atomic transition-colors hover:text-atomic-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-atomic"
       >
         {{ siteConfig.company
         }}<span class="sr-only"> (opens in new tab)</span></NuxtLink

@@ -15,11 +15,11 @@ import { connectTopics, siteConfig } from "~/data/site";
     <h2
       class="mt-3 font-display text-3xl font-medium tracking-tight text-white sm:text-[2rem]"
     >
-      Let’s compare notes
+      Get in touch
     </h2>
     <p class="mt-4 max-w-2xl text-lg leading-8 text-zinc-300">
-      Working on developer experience, customer operations, or AI workflows?
-      Happy to compare notes.
+      If you’re working on developer experience, customer operations, or AI
+      workflows, feel free to reach out.
     </p>
 
     <ul class="mt-5 flex flex-wrap gap-2" aria-label="Conversation topics">

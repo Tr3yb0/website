@@ -10,12 +10,18 @@ export type SocialProfile = {
   icon: string;
 };
 
+export type SelectedWorkLink = {
+  label: string;
+  url: string;
+};
+
 export type SelectedWorkItem = {
   organization: string;
   organizationHighlight?: boolean;
   category: string;
   title: string;
   paragraphs: string[];
+  links?: SelectedWorkLink[];
   tags: string[];
   featured?: boolean;
 };
@@ -120,6 +126,20 @@ export const selectedWorkItems: SelectedWorkItem[] = [
     paragraphs: [
       "Built and connected API guidance, quickstarts, Postman workflows, demos, videos, SDK and webhook enablement, and release notes so developers and internal teams have working paths through Atomic’s platform.",
     ],
+    links: [
+      {
+        label: "Public Postman Workspace",
+        url: "https://www.postman.com/atomicfi/atomic-financial-public-workspace/overview",
+      },
+      {
+        label: "Atomic Docs",
+        url: "https://docs.atomicfi.com/reference/api",
+      },
+      {
+        label: "Atomic YouTube",
+        url: "https://www.youtube.com/@atomic.financial",
+      },
+    ],
     tags: ["Developer adoption", "Docs & quickstarts", "Self-service enablement"],
   },
   {
@@ -188,21 +208,50 @@ export const experienceItems: ExperienceItem[] = [
 
 export const speakingItems: SpeakingItem[] = [
   {
+    format: "Article",
+    venue: "Atomic Blog",
+    detail: "“The Future of Open Finance: Navigating the Seas of Change”",
+    url: "https://atomic.financial/insights/the-future-of-open-finance-navigating-the-seas-of-change/",
+  },
+  {
+    format: "Writing",
+    venue: "DEV Community",
+    detail: "Technical guides on Fluree, Docker, and developer communities",
+    url: "https://dev.to/treybotard",
+  },
+  {
+    format: "Speaker",
+    venue: "Financial Data Exchange (FDX)",
+    detail: "Multiple speaking engagements",
+  },
+  {
+    format: "Speaker",
+    venue: "FinovateSpring",
+    detail: "Featured speaker",
+    url: "https://finovate.com/videos/finovatespring-2024-atomic/",
+  },
+  {
     format: "Talk",
     venue: "The Knowledge Graph Conference",
     detail: "“Bringing Time and Truth to Semantic Data”",
     url: "https://www.knowledgegraph.tech/speakers/trey-botard/",
   },
   {
-    format: "Speaker",
-    venue: "FinovateSpring",
-    detail: "Featured speaker",
-  },
-  {
     format: "Podcast",
     venue: "Fireside with Voxgig, Episode 238",
     detail: "“Head of Developer Relations at Atomic”",
     url: "https://open.spotify.com/episode/6WeXJStHxl2Lx1DF45rmMP",
+  },
+  {
+    format: "Podcast",
+    venue: "The State of Developer Education",
+    detail: "“Which Department Does DevRel Really Belong to?”",
+    url: "https://www.youtube.com/watch?v=0fJMkx7y3XY",
+  },
+  {
+    format: "Podcast",
+    venue: "Whose Bottom Line Is It Anyway?",
+    detail: "“Intimacy with finance: making taxes a year-round affair” (with april)",
   },
   {
     format: "Advisory",

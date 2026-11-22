@@ -12,7 +12,7 @@ import { speakingItems } from "~/data/site";
     <h2
       class="mt-3 font-display text-3xl font-medium tracking-tight text-white sm:text-[2rem]"
     >
-      Talks, podcasts, and advisory
+      Talks, writing, podcasts, and advisory
     </h2>
 
     <ul class="mt-8 divide-y divide-zinc-800/80 border-y border-zinc-800/80">

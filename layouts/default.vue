@@ -17,7 +17,7 @@ const activeSection = useActiveSection();
 
     <LeftNav
       :active-section="activeSection"
-      class="sticky top-8 hidden w-44 flex-none lg:block"
+      class="sticky top-8 hidden w-48 flex-none lg:block"
     />
 
     <div class="w-full max-w-3xl">

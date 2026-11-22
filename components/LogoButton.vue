@@ -6,17 +6,17 @@ import { siteConfig } from "~/data/site";
   <NuxtLink
     to="/"
     aria-label="Trey Botard, Home"
-    class="group inline-flex flex-col items-start rounded p-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+    class="group inline-flex items-center gap-2.5 rounded p-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
   >
     <img
-      class="h-14 w-14 transition-opacity group-hover:opacity-90"
+      class="h-9 w-9 shrink-0 transition-opacity group-hover:opacity-90"
       src="~/assets/images/TB-logo-dark.png"
       alt=""
-      width="56"
-      height="56"
+      width="36"
+      height="36"
     />
     <span
-      class="mt-2.5 font-display text-2xl font-medium tracking-tight text-white"
+      class="whitespace-nowrap font-display text-lg font-medium tracking-tight text-white"
     >
       {{ siteConfig.name }}
     </span>
