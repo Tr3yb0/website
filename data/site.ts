@@ -60,7 +60,7 @@ export const siteConfig = {
   location: "Raleigh, North Carolina",
   url: "https://www.treybotard.com/",
   ogImage: "https://www.treybotard.com/og.png",
-  title: "Trey Botard",
+  title: "Trey Botard | Strategic Initiatives at Atomic",
   description:
     "Strategic Initiatives at Atomic. Helping take new products from early concepts to first customer launches, plus developer experience, customer operations systems, and AI workflows.",
   ogDescription:
