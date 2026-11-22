@@ -1,28 +1,66 @@
+<script setup lang="ts">
+import { connectTopics, siteConfig } from "~/data/site";
+</script>
+
 <template>
-  <section class="mt-12">
-    <h2 class="text-xl font-semibold mb-6">Connect</h2>
+  <section
+    id="connect"
+    class="mt-24 scroll-mt-24 rounded-lg border border-zinc-800 bg-zinc-900/70 p-7"
+  >
+    <p
+      class="font-mono text-xs font-medium uppercase tracking-[0.18em] text-blue-400"
+    >
+      Connect
+    </p>
+    <h2
+      class="mt-3 font-display text-3xl font-medium tracking-tight text-white sm:text-[2rem]"
+    >
+      Get in touch
+    </h2>
+    <p class="mt-4 max-w-2xl text-lg leading-8 text-zinc-300">
+      If you’re working on developer experience, customer operations, or AI
+      workflows, feel free to reach out.
+    </p>
 
-    <div class="space-y-4">
-      <div class="flex flex-col space-y-3">
-        <NuxtLink
-          to="https://www.knowledgegraph.tech/speakers/trey-botard/"
-          target="_blank"
-          class="text-blue-400 hover:text-blue-300 hover:underline flex items-center space-x-2"
-        >
-          <span>→</span>
-          <span>Speaking Profile - Knowledge Graph Conference</span>
-        </NuxtLink>
+    <ul class="mt-5 flex flex-wrap gap-2" aria-label="Conversation topics">
+      <li
+        v-for="topic in connectTopics"
+        :key="topic"
+        class="rounded-full border border-zinc-800 bg-zinc-950/70 px-3 py-1 text-xs text-zinc-300"
+      >
+        {{ topic }}
+      </li>
+    </ul>
 
-        <NuxtLink
-          to="https://open.spotify.com/episode/6WeXJStHxl2Lx1DF45rmMP"
-          target="_blank"
-          class="text-blue-400 hover:text-blue-300 hover:underline flex items-center space-x-2"
+    <div class="mt-7 flex flex-wrap gap-3">
+      <NuxtLink
+        :to="siteConfig.linkedinUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group inline-flex items-center gap-1.5 rounded bg-blue-600 px-5 py-3 font-medium text-white transition-colors hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+      >
+        <span>LinkedIn</span>
+        <span
+          aria-hidden="true"
+          class="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+          >↗</span
         >
-          <span>→</span>
-          <span>Podcast: Fireside with Voxgig (Episode 238)</span>
-        </NuxtLink>
-      </div>
+        <span class="sr-only"> (opens in new tab)</span>
+      </NuxtLink>
+      <NuxtLink
+        :to="siteConfig.githubUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group inline-flex items-center gap-1.5 rounded border border-zinc-700 px-5 py-3 font-medium text-zinc-100 transition-colors hover:border-zinc-500 hover:bg-zinc-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+      >
+        <span>GitHub</span>
+        <span
+          aria-hidden="true"
+          class="text-zinc-400 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-zinc-200"
+          >↗</span
+        >
+        <span class="sr-only"> (opens in new tab)</span>
+      </NuxtLink>
     </div>
   </section>
 </template>
-

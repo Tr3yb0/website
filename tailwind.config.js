@@ -1,22 +1,28 @@
+import typography from "@tailwindcss/typography";
 import plugin from "tailwindcss/plugin";
 
-export const theme = {
-  extend: {
-    fontFamily: {
-      caveat: ["Caveat", "cursive"],
-      geist: ["Geist", "system-ui", "sans-serif"],
-      "geist-mono": ["Geist Mono", "ui-monospace", "monospace"],
+export default {
+  theme: {
+    extend: {
+      colors: {
+        atomic: {
+          DEFAULT: "#9089FC",
+          light: "#B4A9FF",
+        },
+      },
+      fontFamily: {
+        display: ['"Fraunces"', "Georgia", "serif"],
+        sans: ['"Plus Jakarta Sans"', "system-ui", "sans-serif"],
+        mono: ['"IBM Plex Mono"', "ui-monospace", "monospace"],
+      },
     },
   },
+  plugins: [
+    typography,
+    plugin(function ({ addBase, theme }) {
+      addBase({
+        b: { fontWeight: theme("fontWeight.semibold") },
+      });
+    }),
+  ],
 };
-export const plugins = [
-  require("@tailwindcss/typography"),
-  plugin(function ({ addBase, theme }) {
-    addBase({
-      h1: { fontSize: theme("fontSize.2xl") },
-      h2: { fontSize: theme("fontSize.xl") },
-      h3: { fontSize: theme("fontSize.lg") },
-      b: { fontWeight: theme("fontWeight.semibold") },
-    });
-  }),
-];

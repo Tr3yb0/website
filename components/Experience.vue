@@ -1,45 +1,65 @@
+<script setup lang="ts">
+import { experienceItems } from "~/data/site";
+</script>
+
 <template>
-  <section id="experience" class="mt-12">
-    <h2 class="text-xl font-semibold mb-6 group">
-      <a href="#experience" class="flex items-center">
-        Professional Experience
-        <span class="ml-2 opacity-0 group-hover:opacity-100 text-blue-400 transition-opacity text-3xl italic">#</span>
-      </a>
+  <section id="experience" class="mt-24 scroll-mt-24">
+    <p
+      class="font-mono text-xs font-medium uppercase tracking-[0.18em] text-blue-400"
+    >
+      Experience
+    </p>
+    <h2
+      class="mt-3 font-display text-3xl font-medium tracking-tight text-white sm:text-[2rem]"
+    >
+      Where I’ve worked
     </h2>
 
-    <div class="space-y-6">
-      <div class="border-l-2 border-blue-500 pl-4">
-        <h3 class="font-medium text-lg">Director of Developer Relations</h3>
-        <p class="text-blue-400 text-sm">Atomic Financial • Current</p>
-        <p class="mt-2 text-gray-300">
-          Managing developer experience for payroll integrations and digital
-          financial connectivity platform. Building tools and creating content
-          to streamline the end-to-end developer journey.
+    <div class="mt-10 space-y-8">
+      <article
+        v-for="item in experienceItems"
+        :key="item.role"
+        class="border-l-2 pl-5"
+        :class="item.current ? 'border-atomic' : 'border-zinc-700'"
+      >
+        <div class="flex flex-wrap items-center gap-2.5">
+          <h3 class="text-lg font-semibold text-white">
+            {{ item.role }}
+          </h3>
+          <span
+            v-if="item.current"
+            class="rounded-full border border-atomic/30 bg-atomic/10 px-2.5 py-0.5 font-mono text-xs text-atomic-light"
+          >
+            Current
+          </span>
+        </div>
+        <p class="mt-0.5 text-sm text-zinc-400">
+          <template
+            v-for="(company, index) in item.companies"
+            :key="company.name"
+          >
+            <span v-if="index > 0"> · </span>
+            <NuxtLink
+              v-if="company.url"
+              :to="company.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              :class="
+                company.highlight
+                  ? 'font-medium text-atomic hover:text-atomic-light focus-visible:outline-atomic'
+                  : 'text-zinc-300 hover:text-white focus-visible:outline-blue-400'
+              "
+            >
+              {{ company.name }}<span class="sr-only"> (opens in new tab)</span>
+            </NuxtLink>
+            <span v-else>{{ company.name }}</span>
+          </template>
         </p>
-      </div>
-
-      <div class="border-l-2 border-gray-600 pl-4">
-        <h3 class="font-medium text-lg">Developer Advocate</h3>
-        <p class="text-gray-400 text-sm">Fluree • Previous</p>
-        <p class="mt-2 text-gray-300">
-          Made semantic graph database technology more accessible to developers
-          through community engagement, content creation, and internal advocacy
-          for a North Carolina-based Public Benefit Corporation.
+        <p class="mt-3 max-w-2xl leading-7 text-zinc-300">
+          {{ item.description }}
         </p>
-      </div>
-
-      <div class="border-l-2 border-gray-600 pl-4">
-        <h3 class="font-medium text-lg">Software Developer</h3>
-        <p class="text-gray-400 text-sm">
-          Lincoln Financial, Volvo, Bank of America
-        </p>
-        <p class="mt-2 text-gray-300">
-          Developed enterprise software solutions across natural language
-          understanding, automation, and data integrations for major financial
-          and automotive companies.
-        </p>
-      </div>
+      </article>
     </div>
   </section>
 </template>
-

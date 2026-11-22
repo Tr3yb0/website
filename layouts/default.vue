@@ -1,29 +1,48 @@
+<script setup lang="ts">
+import { navItems } from "~/data/site";
+
+const activeSection = useActiveSection();
+</script>
+
 <template>
   <div
-    class="flex flex-col lg:flex-row justify-center items-start max-w-3xl mx-auto pt-8 lg:pt-32"
+    class="mx-auto flex max-w-5xl flex-col items-start justify-center pt-4 lg:flex-row lg:gap-12 lg:px-6 lg:pt-20"
   >
-    <LeftNav class="hidden lg:block m-4 flex-none w-36 sticky top-8" />
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-blue-600 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-blue-400"
+    >
+      Skip to main content
+    </a>
 
-    <!-- Mobile Header -->
-    <div class="w-full lg:w-auto">
+    <LeftNav
+      :active-section="activeSection"
+      class="sticky top-8 hidden w-48 flex-none lg:block"
+    />
+
+    <div class="w-full max-w-3xl">
       <div
-        class="lg:hidden mb-8 sticky top-0 bg-neutral-900 py-4 flex justify-center space-x-2 z-10"
+        class="sticky top-0 z-10 mb-8 border-b border-zinc-800 bg-zinc-950/95 backdrop-blur lg:hidden"
       >
-        <a
-          href="/"
-          class="rounded px-3 py-2 font-caveat text-2xl text-gray-200 hover:bg-zinc-700 transition-colors"
-          >Home</a
+        <nav
+          aria-label="Primary navigation"
+          class="flex w-full gap-1 overflow-x-auto px-3 py-2"
         >
-        <a
-          href="/#experience"
-          class="rounded px-3 py-2 font-caveat text-2xl text-gray-200 hover:bg-zinc-700 transition-colors"
-          >Experience</a
-        >
-        <a
-          href="/#speaking"
-          class="rounded px-3 py-2 font-caveat text-2xl text-gray-200 hover:bg-zinc-700 transition-colors"
-          >Speaking</a
-        >
+          <NuxtLink
+            v-for="item in navItems"
+            :key="item.to"
+            :to="item.to"
+            :aria-current="activeSection === item.id ? 'location' : undefined"
+            class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded px-2.5 py-2 text-sm font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+            :class="
+              activeSection === item.id
+                ? 'bg-zinc-800 text-white'
+                : 'text-zinc-400 hover:bg-zinc-800/70 hover:text-zinc-100'
+            "
+          >
+            {{ item.text }}
+          </NuxtLink>
+        </nav>
       </div>
       <slot />
     </div>
