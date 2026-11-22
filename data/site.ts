@@ -246,7 +246,7 @@ export const speakingItems: SpeakingItem[] = [
     format: "Podcast",
     title: "Head of Developer Relations at Atomic",
     source: "Fireside with Voxgig · Episode 238",
-    url: "https://open.spotify.com/episode/6WeXJStHxl2Lx1DF45rmMP",
+    url: "https://www.voxgig.com/podcast/trey-botard-head-developer-relations-atomic",
   },
   {
     format: "Podcast",
